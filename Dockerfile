@@ -8,7 +8,7 @@ RUN mkdir -p $basePath
 WORKDIR $basePath
 
 # Install the React App Creator
-RUN npm install -g create-react-app
+#RUN npm install -g create-react-app
 
 # Install app dependencies
 #COPY package.json $basePath/
@@ -20,6 +20,6 @@ RUN npm install -g create-react-app
 VOLUME ["$basePath"]
 
 # Expose the port
-#EXPOSE 8080
-#CMD [ "npm", "start" ]
-CMD [ "ping", "google.com" ]
+EXPOSE 3000
+CMD [ "npm", "start" ]
+#CMD [ "ping", "google.com" ]

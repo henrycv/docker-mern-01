@@ -1,6 +1,8 @@
 {
   "name": "tmp-dir",
   "version": "0.1.0",
+  "description": "MERN stack on Docker",
+  "author": "Henry Carbajal <entidad.estelar@gmail.com>",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
