@@ -1,7 +1,12 @@
-version: '2'
+version: "3.1"
 services:
   web:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: docker-mern-01
+    entrypoint: sh entrypoint.sh
+    working_dir: /srv/www/docker-mern-01/
     ports:
      - "3000:3000"
     volumes:
